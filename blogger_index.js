@@ -85,7 +85,7 @@ $(document).ready(function () {
                       '</div>'+
                     '</div>'+
                   '</li>';
-        if(currentItem == 'floor_plans' || currentItem == 'roof_plans' || currentItem == 'elevations' || currentItem == 'other_drawings')
+        if(key == 'floor_plans' || key == 'roof_plans' || key == 'elevations' || key == 'other_drawings')
             $('#skill_level').append(item);
     }
 
