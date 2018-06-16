@@ -52,10 +52,15 @@ $(document).ready(function () {
         var serviceType = $(this).attr('name');
         var selectedServiceTypeDetail = serviceDetailArr[serviceType];
         $('#img_append img').attr('src', selectedServiceTypeDetail.img_src);
+        $('#img_append a').attr('href', selectedServiceTypeDetail.img_src);
         $('#desc_append').html(selectedServiceTypeDetail.desc);
 
         $('.service-item').removeClass('active');
         $(this).addClass('active');
+    });
+    
+    jQuery('#img_append img').click(function(){
+    
     });
 
     var native_width = 0;
