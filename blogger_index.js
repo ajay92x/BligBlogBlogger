@@ -47,7 +47,7 @@ var serviceDetailArr = {
 }
 
 
-$(document).on('click', '.service-item', function(){
+/*$(document).on('click', '.service-item', function(){
     console.log("In");
         var serviceType = $(this).attr('name');
         var selectedServiceTypeDetail = serviceDetailArr[serviceType];
@@ -56,11 +56,12 @@ $(document).on('click', '.service-item', function(){
 
         $('.service-item').removeClass('active');
         $(this).addClass('active');
-});
+});*/
 
 $(document).ready(function () {
 
     jQuery('.service-item').click(function () {
+        console.log("InX");
         var serviceType = $(this).attr('name');
         var selectedServiceTypeDetail = serviceDetailArr[serviceType];
         $('.img_append img').attr('src', selectedServiceTypeDetail.img_src);
