@@ -81,12 +81,12 @@ $(document).ready(function () {
         var item = '<li>'+
                     '<div class="progress">'+
                       '<div class="progress-bar" data-progress="'+currentItem.skill_level+'" role="progressbar" style="background: #393939;">'+
-                        currentItem.name+' '+currentItem.skill_level+
+                        currentItem.name+' '+currentItem.skill_level+'%'+
                       '</div>'+
                     '</div>'+
                   '</li>';
-        
-        $('#skill_level').append(item);
+        if(currentItem == 'floor_plans' || currentItem == 'roof_plans' || currentItem == 'elevations' || currentItem == 'other_drawings')
+            $('#skill_level').append(item);
     }
 
     var native_width = 0;
