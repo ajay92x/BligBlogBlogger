@@ -76,7 +76,7 @@ $(document).ready(function () {
     
     $('#skill_level').empty();
     for(var key in serviceDetailArr) {
-        var currentItem = serviceDetailArr[item];
+        var currentItem = serviceDetailArr[key];
         console.log(currentItem);
         var item = '<li>'+
                     '<div class="progress">'+
