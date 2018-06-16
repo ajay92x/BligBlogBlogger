@@ -47,6 +47,16 @@ var serviceDetailArr = {
 }
 
 
+$(document).on('click', '.service-item', function(){
+    console.log("In");
+        var serviceType = $(this).attr('name');
+        var selectedServiceTypeDetail = serviceDetailArr[serviceType];
+        $('.img_append img').attr('src', selectedServiceTypeDetail.img_src);
+        $('.desc_append').html(selectedServiceTypeDetail.desc);
+
+        $('.service-item').removeClass('active');
+        $(this).addClass('active');
+});
 
 $(document).ready(function () {
 
